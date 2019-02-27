@@ -17,9 +17,9 @@ attr_accessor :sender, :receiver, :amount, :status
   end
 
   def execute_transaction
-    if condition
+    if
 
-    elsif condition
+    elsif
 
     else
     sender.deposit(@amount ) #how to account for amount?
