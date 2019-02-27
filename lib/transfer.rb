@@ -30,7 +30,7 @@ attr_accessor :sender, :receiver, :amount, :status
   def reverse_transfer
     if @status == "complete"
       @sender.deposit(@amount) #how to account for amount?
-      @receiver.deposit(@amount * 1)
+      @receiver.deposit(@amount * -1)
       @status = "reversed"
     end
   end
