@@ -27,8 +27,8 @@ attr_accessor :sender, :receiver, :amount, :status
     end
   end
 
-  def reverse_transaction
-
+  def reverse_transfer
+    self.reverse_transfer
   end
 
 end
