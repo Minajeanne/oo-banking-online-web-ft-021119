@@ -17,10 +17,15 @@ attr_accessor :sender, :receiver, :amount, :status
   end
 
   def execute_transaction
+    if condition
 
+    elsif condition
+
+    else
     sender.deposit(@amount ) #how to account for amount?
     receiver.deposit(@amount)
     @status = "complete"
+    end
   end
 
   def reverse_transaction
