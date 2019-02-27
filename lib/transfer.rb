@@ -9,7 +9,7 @@ attr_accessor :sender, :receiver, :amount, :status
   end
 
   def valid?
-    if BankAccount.status && self.status
+    if BankAccount.valid? && self.valid?
       true
     else
       false
