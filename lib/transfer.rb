@@ -8,8 +8,11 @@ attr_accessor :sender, :receiver, :amount, :status
     @status = "pending"
   end
 
-  def valid
-
+  def valid?
+    if BankAccount.status && self.status
+      true
+    else
+      false
   end
 
   def execute_transaction
