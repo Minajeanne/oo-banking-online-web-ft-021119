@@ -13,6 +13,7 @@ attr_accessor :sender, :receiver, :amount, :status
       true
     else
       false
+    end
   end
 
   def execute_transaction
