@@ -18,6 +18,9 @@ attr_accessor :sender, :receiver, :amount, :status
 
   def execute_transaction
 
+    sender.deposit(@amount ) #how to account for amount?
+    receiver.deposit(@amount)
+    @status = "complete"
   end
 
   def reverse_transaction
