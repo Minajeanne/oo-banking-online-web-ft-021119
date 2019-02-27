@@ -21,8 +21,8 @@ attr_accessor :sender, :receiver, :amount, :status
         @status = "rejected"
         "Transaction rejected. Please check your account balance."
     else
-    @sender.deposit -= @amount #how to account for amount?
-    @receiver.deposit += @amount
+    @sender.deposit(@amount -1) #how to account for amount?
+    @receiver.deposit(@amount)
     @status = "complete"
     end
   end
