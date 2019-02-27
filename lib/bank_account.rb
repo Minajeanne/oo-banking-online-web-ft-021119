@@ -18,7 +18,9 @@ attr_reader :name
 
   def valid
     if @status == "open" && @balance > 0
-    else nil
+      true
+    else
+      false
     end
   end
 
