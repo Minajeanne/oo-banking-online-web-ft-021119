@@ -20,7 +20,7 @@ attr_accessor :sender, :receiver, :amount, :status
     if @sender.balance < @amount
         @status = "rejected"
         "Transaction rejected. Please check your account balance."
-    elsif
+    else
       @sender.deposit(@amount * -1) #how to account for amount?
       @receiver.deposit(@amount)
       @status = "complete"
